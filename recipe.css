@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,900&family=Titillium+Web:wght@900&display=swap');
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#85b72c;
+    --font-family:"Playfair Dispaly", sans- serif;
+}
+.heading{
+  text-align: center;
+  padding-top: 20px;
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.filter-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px,1fr) );
+  gap: 20px;
+  margin:10vh;
+}
+.filter-button {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #dad7d7;
+  background-color: rgb(3, 3, 68);
+  opacity: 0.9;
+  border-radius: 12px;
+}
+.filter-button:hover{
+  background-color: #dad7d7;
+  color: rgb(3, 3, 68);
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr) );
+  grid-gap: 20px;
+  margin: 5vh 0;
+  padding: 0 10vh;
+}
+.grid-container .grid-item img{
+  border-radius: 20px;
+  padding-top: 10px;
+  height: 35vh;
+  width: 100%;
+}
+.grid-item{
+  width: 100%;
+  background-color: #e5f6f8;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2vh;
+  align-items: center;
+}
+.grid-item:hover{
+  box-shadow: 6px 6px 20px 2px rgba(0, 0, 0, 0.865)
+}
+.content h2{
+  text-align: center;
+  font-size: 25px;
+}
+.content p{
+  font-size: 17px;
+  text-align: justify;
+  margin: 2vh 0;
+}
+.button button{
+  font-size: 20px;
+  padding: 2vh;
+  background-color: rgb(5, 5, 88);
+  color: white;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.button button:hover{
+  background-color: white;
+  color: rgb(5, 5, 88);
+}
+.button i{
+  font-size: 30px;
+  padding-left: 50px;
+}
+.button i.fa-regular.fa-heart.active {
+  color: red; /* Change color to your desired color */
+}
+
+
